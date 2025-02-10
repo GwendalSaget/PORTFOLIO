@@ -17,7 +17,6 @@
 
 
 body {
-
     background: #021A3A;
     color: #FABA35;
 }
@@ -157,25 +156,6 @@ h3 {
     align-items: baseline;
     padding-top: 65px;
     padding-bottom: 65px;
-}
-
-.btn {
-    border: 2px solid #E6635A;
-    color: #021A3A;
-    background-color: #FABA35;
-    padding: 12px 25px;
-    margin: 5px;
-    border-radius: 30px;
-    box-shadow: 0 10px 10px -8px rgba(0, 0, 0, 0.78);
-}
-
-.btn-hover {
-    border: 2px solid #FABA35;
-    color: #021A3A;
-    background-color: #E6635A;
-    padding: 12px 25px;
-    margin: 5px;
-    border-radius: 30px;
 }
 
 .btn_active {
