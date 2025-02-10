@@ -1,0 +1,253 @@
+:root  {
+    /*palette de couleurs charte graphique*/
+    --primary-color: #FABA35;
+    --secondary-color: #E6635A;
+    --terc-color:#021A3A;
+
+    /*TYPOGRAPHIE*/
+    --primary-font: "Gotham", serif;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Gotham", sans-serif;
+    text-decoration: none;
+}
+
+
+body {
+
+    background: #021A3A;
+    color: #FABA35;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+}
+
+nav ul li a {
+    color: #FABA35;
+    font-size: 25px;
+    padding: 1px 75px 1px 1px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+/*Underline effect*/
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 28%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background: #E6635A;
+    transition: width 0.3s ease;
+}
+/*Underline effect*/
+nav ul li a:hover::after {
+    width: 70%;
+}
+/*Underline effect*/
+nav ul li a:hover {
+    font-family: "Gotham XLight", serif;
+    color: #E6635A;
+}
+nav ul li{
+    list-style: none;
+}
+
+/* Section principale */
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 1vh;
+    flex-direction: column;
+}
+
+.hero-pic {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 15px solid #021A3A;
+    /*box-shadow: 5px 7px 25px rgb(250, 186, 53);*/
+}
+
+.hero-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.hero-pic img:hover {
+    transform: scale(1.1);
+}
+#Logo_img{
+    display: flex;
+    width: 30%;
+    justify-content: flex-start;
+}
+#Logo_img:hover{
+    transform: scale(1.1);
+}
+.hero-text {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: 20px;
+    font-family: "Gotham Light", sans-serif;
+    color: #E6635A;
+    padding-top: 10px;
+}
+
+h2 {
+    color: #FABA35;
+    font-size: 25px;
+    font-family: "Gotham", sans-serif;
+    font-weight: 500;
+    padding-top: 8px;
+}
+.photos{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-family: "Gotham", sans-serif;
+    font-weight: 500;
+    color: #E6635A;
+    padding-top: 20px;
+}
+
+#pres{
+    color: #FABA35;
+    font-size: 20px;
+    font-family: "Gotham Thin", sans-serif;
+    padding-top: 37px;
+    padding-bottom: 38px;
+    letter-spacing: 1px;
+    line-height: 27px;
+}
+
+.btn-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+
+.btn {
+    border: 2px solid #E6635A;
+    color: #021A3A;
+    background-color: #FABA35;
+    padding: 12px 25px;
+    margin: 5px;
+    border-radius: 30px;
+    box-shadow: 0 10px 10px -8px rgba(0, 0, 0, 0.78);
+}
+
+.btn-hover {
+    border: 2px solid #FABA35;
+    color: #021A3A;
+    background-color: #E6635A;
+    padding: 12px 25px;
+    margin: 5px;
+    border-radius: 30px;
+}
+
+.btn_active {
+    width: 80px;
+    padding-left: 18px;
+    padding-right: 18px;
+
+}
+.btn_port {
+    width: 175px;
+}
+.projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 65px;
+}
+.btn_active:hover{
+    transform: scale(1.1);
+}
+.btn_port:hover{
+    transform: scale(1.1);
+}
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav {
+        padding: 1rem 20px;
+        display: flex;
+        flex-direction: column;
+        font-size: 2.5vw;
+    }
+
+    nav ul {
+        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+    li{
+        list-style: none;
+    }
+    .logo-text{
+        font-size: 4vw;
+    }
+}
+
+.images_projets{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+}
+.impr{
+    width: 400px;
+    padding: 30px 30px 30px 30px;
+    opacity: 50%;
+}
+.impr:hover{
+    transform: scale(1.05);
+    opacity: 100%;
+}
+footer{
+    display: flex;
+    font-family: "Gotham XLight", serif;
+    color: #E6635A;
+    font-size: 10px;
+    align-items: flex-end;
+}
