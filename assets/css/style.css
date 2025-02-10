@@ -223,6 +223,7 @@ footer{
 .impr:hover{
     transform: scale(1.05);
     opacity: 100%;
+    transition: transform 0.2s ease;
 }
 footer{
     display: flex;
