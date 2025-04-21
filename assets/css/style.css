@@ -15,6 +15,26 @@
     text-decoration: none;
 }
 
+@font-face {
+    font-family:'GothamLight';
+    src: url('/assets/fonts/Gotham-Light.otf');
+}
+@font-face {
+    font-family:'GothamBook';
+    src: url('/assets/fonts/Gotham-BookItalic.otf');
+}
+@font-face {
+    font-family:'GothamThin';
+    src: url('/assets/fonts/Gotham-Thin.otf');
+}
+@font-face {
+    font-family:'GothamX';
+    src: url('/assets/fonts/Gotham-XLight.otf');
+}
+@font-face {
+    font-family:'GothamBase';
+    src: url('/assets/fonts/GothamMedium.ttf');
+}
 
 body {
     background: #021A3A;
@@ -34,6 +54,7 @@ nav ul {
 
 nav ul li a {
     color: #FABA35;
+    font-family: "GothamLight", serif;
     font-size: 25px;
     padding: 1px 75px 1px 1px;
     border-radius: 20px;
@@ -58,7 +79,7 @@ nav ul li a:hover::after {
 }
 /*Underline effect*/
 nav ul li a:hover {
-    font-family: "Gotham XLight", serif;
+    font-family: "GothamX", serif;
     color: #E6635A;
 }
 nav ul li{
@@ -112,7 +133,7 @@ nav ul li{
 
 h1 {
     font-size: 20px;
-    font-family: "Gotham Light", sans-serif;
+    font-family: "GothamLight", sans-serif;
     color: #E6635A;
     padding-top: 10px;
 }
@@ -120,7 +141,7 @@ h1 {
 h2 {
     color: #FABA35;
     font-size: 25px;
-    font-family: "Gotham", sans-serif;
+    font-family: "GothamBase", sans-serif;
     font-weight: 500;
     padding-top: 8px;
 }
@@ -133,7 +154,7 @@ h3 {
     display: flex;
     justify-content: center;
     font-size: 25px;
-    font-family: "Gotham", sans-serif;
+    font-family: "GothamBase", sans-serif;
     font-weight: 500;
     color: #E6635A;
     padding-top: 20px;
@@ -142,7 +163,7 @@ h3 {
 #pres{
     color: #FABA35;
     font-size: 20px;
-    font-family: "Gotham Thin", sans-serif;
+    font-family: "GothamLight", sans-serif;
     padding-top: 37px;
     padding-bottom: 38px;
     letter-spacing: 1px;
@@ -227,7 +248,7 @@ footer{
 }
 footer{
     display: flex;
-    font-family: "Gotham XLight", serif;
+    font-family: "GothamX", serif;
     color: #E6635A;
     font-size: 10px;
     align-items: flex-end;
